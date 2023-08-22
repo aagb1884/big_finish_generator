@@ -19,17 +19,11 @@ const Container = () => {
         <header>The Big Finish Boxset Generator</header>
         <p>Because ideas are hard.</p>
         </section>
-                <MainCharacter />
-                <SupportingCharacter />
-                <Villain />
+                <MainCharacter /> and
+                <SupportingCharacter /> meet
+                <Villain /> set in or around
                 <EventLocation />
-        <div>
-            <button>GENERATE</button>
-        </div>
-
-        <content>
-            
-        </content>
+      
         </>
      );
 }
