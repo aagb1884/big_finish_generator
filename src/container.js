@@ -15,15 +15,20 @@ const Container = () => {
     
     return (
         <>
-        <section>
-        <header>The Big Finish Boxset Generator</header>
-        <p>Because ideas are hard.</p>
+        <header>
+            <div className="the">The </div> 
+            <h1>   <div className="big">BIG</div> 
+            <div className="finish">FINISH</div> </h1>
+            <div className="boxset-generator"> Boxset Generator </div>
+            <div className="line"> | </div>
+            <h3><i>Because we have hundreds of these to make and ideas are hard.</i></h3>
+        </header>
+        <section className="grid">  
+                <div class="grid-item"><MainCharacter /> and</div>
+                <div class="grid-item"><SupportingCharacter /> meet</div>
+                <div class="grid-item"><Villain /> set in or around</div>
+                <div class="grid-item"> <EventLocation /></div>                
         </section>
-                <MainCharacter /> and
-                <SupportingCharacter /> meet
-                <Villain /> set in or around
-                <EventLocation />
-      
         </>
      );
 }

@@ -1,42 +1,65 @@
 .App {
   text-align: center;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-#container {
-  position: absolute;
-  text-align: center;
+header {
+  background-color: #972C34;
+  color: white;
+  margin: 5px;
+  border-radius: 1px;
+  height: 150px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#arrow {
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-top: 10px solid black;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  z-index: 1;
+.the {
+  font-size: 4rem;
+  font-stretch: extra-condensed;
+  margin-left: 5px;
+  margin-right: 10px
 }
 
-#wheel {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-image: conic-gradient(lightpink 0 120deg, lightblue 0 240deg, lightsalmon 0 360deg);
+.big {
+  font-size: 6rem;
+  font-stretch: extra-expanded;
+}
+
+.finish {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-left: 3px;
+}
+
+.boxset-generator {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.line {
+  margin: 10px;
+  font-size: 8rem;
+  padding-bottom: 30px;
+  font-weight: lighter;
+}
+
+header > h1 {
+  line-height: 0.9;
+}
+
+header > h3 {
+  padding-right: 40px
+}
+
+section {
+  display: flex;
+  flex-direction: column; 
+  padding-top: 20px;
 }
