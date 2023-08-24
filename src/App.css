@@ -20,6 +20,14 @@ header {
   align-items: center;
 }
 
+header > h1 {
+  line-height: 0.9;
+}
+
+header > h3 {
+  padding-right: 40px
+}
+
 .the {
   font-size: 4rem;
   font-stretch: extra-condensed;
@@ -50,16 +58,31 @@ header {
   font-weight: lighter;
 }
 
-header > h1 {
-  line-height: 0.9;
-}
 
-header > h3 {
-  padding-right: 40px
-}
 
 section {
   display: flex;
   flex-direction: column; 
   padding-top: 20px;
+}
+
+img{
+  display: block;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+footer {
+  background-color: #972C34;
+  color: white;
+  margin: 5px;
+  border-radius: 1px;
+  height: 150px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
