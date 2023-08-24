@@ -7,13 +7,13 @@ const EventLocation = () => {
         'Pigbin Josh',
         'Norwich',
         "a locked Tesla",
-        'the Club Bongo International in Middlesbrough during the Nineties',
+        'the Club Bongo International (Middlesbrough) during the Nineties',
         'F-Space',
         'Albert Square',
         "a planet where it's illegal to post cringe",
         "the sleepy village of Bidmead",
         'that car park in Tenby that always smells of piss',
-
+        "an abandoned space-station where nothing's actually wrong, it's just a bit old"
     ];
 
     const [location, setLocation] = useState("");
@@ -36,7 +36,7 @@ const EventLocation = () => {
 
     return ( 
         <div>
-            <button onClick={handleButtonClick}>Select Location</button>
+            <button type="button" class="button" onClick={handleButtonClick}>Select Location</button>
             {showGif && <img src="/rtd_titles.gif" alt="GIF" />} 
             {location && <p>{location}</p>}
         </div>

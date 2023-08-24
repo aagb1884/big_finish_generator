@@ -8,14 +8,14 @@ const SupportingCharacter = () => {
         "That pirate who disappears for ages",
         'Angie and Artie Maitland',
         "Richard Nixon",
-        "Kebab Man from 'The Woman Who Fell To Earth'",
+        "'Eat My Salad' guy",
         "Commander Maxil's hat",
-        "Baby Benton",
+        "Baby Sergeant Benton",
         'Pete the Morgue Attendant',
         "Daniel Barton's mum",
         "Noor Inayat Khan",
         'Any of the Class cast who are available',
-        'Gilbert M'
+        'Gilbert M',
     ];
 
     const [supportingCharacter, setSupportingCharacter] = useState("");
@@ -38,7 +38,7 @@ const SupportingCharacter = () => {
 
     return ( 
         <div>
-            <button onClick={handleButtonClick}>Select Supporting Character</button>
+            <button type="button" class="button" onClick={handleButtonClick}>Select Supporting Character</button>
             {showGif && <img src="/capaldi_clocks.gif" alt="GIF" />} 
             {supportingCharacter && <p>{supportingCharacter}</p>}
         </div>
