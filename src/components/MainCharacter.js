@@ -8,10 +8,13 @@ const MainCharacter = () => {
         'Dalek Caan',
         'The Morbius Doctors',
         'Captain Archibald Hamish Lethbridge-Stewart',
-        'An unassuming writer/director/producer plus actor in his sixties',
+        'An unassuming writer/director/producer (plus actor) in his sixties',
         'Pigbin Josh',
         "The Companions' Rebound Support Group", 
-        'Young Soldeed'                  
+        'Young Soldeed',
+        "The painting of the Third Doctor from Timelash",  
+        'Elton Pope',
+        'Lucy Saxon',
     ];
 
     const [mainCharacter, setMainCharacter] = useState("");

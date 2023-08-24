@@ -3,12 +3,17 @@ import { useState } from 'react';
 const EventLocation = () => {
 
     const eventLocation = [
-        'A lift',
+        'a lift',
         'Pigbin Josh',
         'Norwich',
-        'the first defenestration of Prague',
-        "Elon Musk's takeover of Twitter"
-         
+        "a locked Tesla",
+        'the Club Bongo International in Middlesbrough during the Nineties',
+        'F-Space',
+        'Albert Square',
+        "a planet where it's illegal to post cringe",
+        "the sleepy village of Bidmead",
+        'that car park in Tenby that always smells of piss',
+
     ];
 
     const [location, setLocation] = useState("");
@@ -32,7 +37,7 @@ const EventLocation = () => {
     return ( 
         <div>
             <button onClick={handleButtonClick}>Select Location</button>
-            {showGif && <img src="/untempered_schism.gif" alt="GIF" />} 
+            {showGif && <img src="/rtd_titles.gif" alt="GIF" />} 
             {location && <p>{location}</p>}
         </div>
     );

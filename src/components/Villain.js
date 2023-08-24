@@ -8,8 +8,10 @@ const Villain = () => {
         'Eighties Cyberleader',
         'Sixteenth Century French Catholics',
         'Jack Robertson',
-        'the Timewyrm,'
-        
+        'the Timewyrm',
+        'that big Yellow Dalek',
+        'General Cobb',
+        'I dunno, evil gas or something',
     ];
 
     const [villain, setVillain] = useState("");
@@ -27,13 +29,13 @@ const Villain = () => {
         setTimeout(() => {
             get_random_villain();
             setShowGif(false);
-        }, 3000); 
+        }, 6000); 
     }
 
     return ( 
         <div>
             <button onClick={handleButtonClick}>Select Villain</button>
-            {showGif && <img src="/untempered_schism.gif" alt="GIF" />} 
+            {showGif && <img src="/mccoy_titles.gif" alt="GIF" />} 
             {villain && <p>{villain}</p>}
         </div>
     );

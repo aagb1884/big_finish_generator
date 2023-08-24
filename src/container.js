@@ -23,29 +23,36 @@ const Container = () => {
             <div className="line"> | </div>
             <h3><i>Because we have hundreds of these to make and ideas are hard.</i></h3>
         </header>
+        <section>
         <br/>
         <Row gutter={20} justify="center" align="middle">
-            <Col span={3}>At last, </Col>
-            <Col span={3}><MainCharacter /></Col>
+            <Col span={5}>At last, </Col>
+            <Col span={5}><MainCharacter /></Col>
         </Row>
         <br />
         <Row gutter={20} justify="center" align="middle">
-        <Col span={3}>and</Col>
-            <Col span={3}><SupportingCharacter /></Col>
+        <Col span={5}>and</Col>
+            <Col span={5}><SupportingCharacter /></Col>
         </Row>
         <br />
         <Row gutter={20} justify="center" align="middle">
-            <Col span={3}>meet</Col>
-            <Col span={3}><Villain /></Col>
+            <Col span={5}>will meet</Col>
+            <Col span={5}><Villain /></Col>
         </Row>
         <br />
-        <Row gutter={20} justify="center" align="middle">
-            <Col span={3}>set in or around</Col>
-            <Col span={3}><EventLocation /></Col>
+        <Row gutter={10} justify="center" align="middle">
+            <Col span={5}>in</Col>
+            <Col span={5}><EventLocation /></Col>
         </Row>
-    
+        </section>
+
         <footer>
         <h1>WE LOVE STORIES</h1>
+            <div className="line"> | </div>
+            <div className="fitton"> 
+                <h5>please help</h5>
+                <h4>Matt Fitton hasn't seen his kids in years.</h4>
+            </div>
         </footer>
         </>
      );
