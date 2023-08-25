@@ -11,9 +11,6 @@ const PithyFooterQuotes = () => {
         
     ];
 
-       
-
-    
         const randomIndex = Math.floor(Math.random() * footerQuotes.length);
         const selectedQuote = footerQuotes[randomIndex];  
 

@@ -7,6 +7,7 @@ const Villain = () => {
         "Bertie Cavel's 'Mysterious Man'",
         'Eighties Cyberleader',
         'Sixteenth Century French Catholics',
+        'Madame Kovarian',
         'Jack Robertson',
         'the Timewyrm',
         'that big Yellow Dalek',
@@ -35,8 +36,8 @@ const Villain = () => {
 
     return ( 
         <div>
-            <button type="button" class="button" onClick={handleButtonClick}>Select Villain</button>
-            {showGif && <img class="villain-gif" src="/mccoy_titles.gif" alt="GIF" />} 
+            <button type="button" className="button" onClick={handleButtonClick}>Select Villain</button>
+            {showGif && <img className="villain-gif" src="/mccoy_titles.gif" alt="GIF" />} 
             {villain && <p>{villain}</p>}
         </div>
     );

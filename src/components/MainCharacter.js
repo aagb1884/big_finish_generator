@@ -37,8 +37,8 @@ const MainCharacter = () => {
 
     return ( 
         <div>
-            <button type="button" class="button" onClick={handleButtonClick}>Select Main Character</button>
-            {showGif && <img class="main-char-gif" src="/untempered_schism.gif" alt="GIF" />} 
+            <button type="button" className="button" onClick={handleButtonClick}>Select Main Character</button>
+            {showGif && <img className="main-char-gif" src="/untempered_schism.gif" alt="GIF" />} 
             {mainCharacter && <p>{mainCharacter}</p>}
         </div>
     );

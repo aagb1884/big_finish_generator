@@ -37,8 +37,8 @@ const EventLocation = () => {
 
     return ( 
         <div>
-            <button type="button" class="button" onClick={handleButtonClick}>Select Location</button>
-            {showGif && <img class="location-gif" src="/rtd_titles.gif" alt="GIF" />} 
+            <button type="button" className="button" onClick={handleButtonClick}>Select Location</button>
+            {showGif && <img className="location-gif" src="/rtd_titles.gif" alt="GIF" />} 
             {location && <p>{location}</p>}
         </div>
     );
