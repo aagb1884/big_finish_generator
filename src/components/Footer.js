@@ -1,3 +1,5 @@
+import PithyFooterQuotes from "./lists/PithyFooterQuotes";
+
 const Footer = () => {
     return (  
         <footer>
@@ -5,7 +7,7 @@ const Footer = () => {
             <div className="line"> | </div>
             <div className="fitton"> 
                 <h5>please help</h5>
-                <h4>Matt Fitton hasn't seen his kids in years.</h4>
+                <h4><PithyFooterQuotes /></h4>
             </div>
         </footer>
     );

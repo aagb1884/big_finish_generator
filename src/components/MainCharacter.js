@@ -32,13 +32,13 @@ const MainCharacter = () => {
         setTimeout(() => {
             get_random_main_character();
             setShowGif(false);
-        }, 3000); // Adjust the delay as needed (in milliseconds)
+        }, 3000); 
     }
 
     return ( 
         <div>
             <button type="button" class="button" onClick={handleButtonClick}>Select Main Character</button>
-            {showGif && <img src="/untempered_schism.gif" alt="GIF" />} 
+            {showGif && <img class="main-char-gif" src="/untempered_schism.gif" alt="GIF" />} 
             {mainCharacter && <p>{mainCharacter}</p>}
         </div>
     );

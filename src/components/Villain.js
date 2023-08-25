@@ -36,7 +36,7 @@ const Villain = () => {
     return ( 
         <div>
             <button type="button" class="button" onClick={handleButtonClick}>Select Villain</button>
-            {showGif && <img src="/mccoy_titles.gif" alt="GIF" />} 
+            {showGif && <img class="villain-gif" src="/mccoy_titles.gif" alt="GIF" />} 
             {villain && <p>{villain}</p>}
         </div>
     );

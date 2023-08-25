@@ -39,7 +39,7 @@ const SupportingCharacter = () => {
     return ( 
         <div>
             <button type="button" class="button" onClick={handleButtonClick}>Select Supporting Character</button>
-            {showGif && <img src="/capaldi_clocks.gif" alt="GIF" />} 
+            {showGif && <img class="support-char-gif" src="/capaldi_clocks.gif" alt="GIF" />} 
             {supportingCharacter && <p>{supportingCharacter}</p>}
         </div>
     );
