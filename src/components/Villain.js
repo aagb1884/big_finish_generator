@@ -4,7 +4,6 @@ const Villain = () => {
 
     const villains = [
         'Pigbin Josh',
-        "Bertie Cavel's 'Mysterious Man'",
         'Eighties Cyberleader',
         'Sixteenth Century French Catholics',
         'Madame Kovarian',
