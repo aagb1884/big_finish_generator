@@ -11,10 +11,13 @@ const EventLocation = () => {
         'F-Space',
         'Albert Square',
         "a space-station where it's illegal to post cringe",
-        "the sleepy village of Bidmead",
+        "the sleepy English village of Bidmead",
         'that car park in Tenby that always smells of piss',
         "an abandoned space-station where nothing's actually wrong, it's just a bit old",
         "the Second Doctor's hotel room",
+        "a planet named after its  primary characteristic",
+        "an amateur production of 'Footloose'",
+        'a strange limbo world where nothing is as it seems'
     ];
 
     const [location, setLocation] = useState("");

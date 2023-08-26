@@ -16,6 +16,10 @@ const SupportingCharacter = () => {
         "Noor Inayat Khan",
         'any of the Class cast who are available',
         'Gilbert M',
+        'Courtney Pine',
+        'Gunnersaurus',
+        'the Ogron-Eater',
+        "commodore 'tonker' travers",
     ];
 
     const [supportingCharacter, setSupportingCharacter] = useState("");

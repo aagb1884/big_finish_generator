@@ -15,6 +15,9 @@ const MainCharacter = () => {
         "the painting of the Third Doctor from 'Timelash'",  
         'Elton Pope',
         'Lucy Saxon',
+        'the Kerblam HR team',
+        "Someone Jacob Dudman can't quite do the voice for",
+
     ];
 
     const [mainCharacter, setMainCharacter] = useState("");
