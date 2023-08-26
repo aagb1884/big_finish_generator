@@ -5,7 +5,7 @@ const SupportingCharacter = () => {
     const supportingCharacters = [
         'Pigbin Josh',
         "Choking on an Olive woman from 'The Lazarus Experiment'",
-        "That pirate who disappears for ages",
+        "that pirate who disappears for ages",
         'Angie and Artie Maitland',
         "Richard Nixon",
         "'Eat My Salad' guy",
@@ -14,7 +14,7 @@ const SupportingCharacter = () => {
         'Pete the Morgue Attendant',
         "Daniel Barton's mum",
         "Noor Inayat Khan",
-        'Any of the Class cast who are available',
+        'any of the Class cast who are available',
         'Gilbert M',
     ];
 
@@ -27,19 +27,24 @@ const SupportingCharacter = () => {
         setSupportingCharacter(selectedCharacter);
     }
 
+    const audio = new Audio('audio/thalia_2.mp3');
+
     function handleButtonClick() {
         setShowGif(true);
+        audio.play();
 
         setTimeout(() => {
             get_random_supporting_character();
+            audio.pause();
             setShowGif(false);
+            audio.currentTime = 0;
         }, 3000); 
     }
 
     return ( 
         <div>
             <button type="button" className="button" onClick={handleButtonClick}>Select Supporting Character</button>
-            {showGif && <img className="support-char-gif" src="/capaldi_clocks.gif" alt="GIF" />} 
+            {showGif && <img className="support-char-gif" src="images/capaldi_clocks.gif" alt="GIF" />} 
             {supportingCharacter && <p>{supportingCharacter}</p>}
         </div>
     );

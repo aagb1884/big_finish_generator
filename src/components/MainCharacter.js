@@ -8,11 +8,11 @@ const MainCharacter = () => {
         'Dalek Caan',
         'The Morbius Doctors',
         'Captain Archibald Hamish Lethbridge-Stewart',
-        'An unassuming writer/director/producer (plus actor) in his sixties',
+        'an unassuming writer/director/producer (plus actor) in his sixties',
         'Pigbin Josh',
         "The Companions' Rebound Support Group", 
         'Young Soldeed',
-        "The painting of the Third Doctor from Timelash",  
+        "the painting of the Third Doctor from 'Timelash'",  
         'Elton Pope',
         'Lucy Saxon',
     ];
@@ -26,19 +26,24 @@ const MainCharacter = () => {
         setMainCharacter(selectedCharacter);
     }
 
+    const audio = new Audio('audio/thalia_1.mp3');
+
     function handleButtonClick() {
         setShowGif(true);
+        audio.play()
 
         setTimeout(() => {
             get_random_main_character();
+            audio.pause();
             setShowGif(false);
+            audio.currentTime = 0;
         }, 3000); 
     }
 
     return ( 
         <div>
             <button type="button" className="button" onClick={handleButtonClick}>Select Main Character</button>
-            {showGif && <img className="main-char-gif" src="/untempered_schism.gif" alt="GIF" />} 
+            {showGif && <img className="main-char-gif" src="images/untempered_schism.gif" alt="GIF" />} 
             {mainCharacter && <p>{mainCharacter}</p>}
         </div>
     );

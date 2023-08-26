@@ -11,8 +11,9 @@ const Villain = () => {
         'the Timewyrm',
         'that big Yellow Dalek',
         'General Cobb',
-        'That cow the Doctor asked about time scanners',
-        'I dunno, evil gas or something',
+        'that cow the Doctor asked about time scanners',
+        'evil gas or something, I dunno',
+        'the Birmingham six'
     ];
 
     const [villain, setVillain] = useState("");
@@ -24,19 +25,25 @@ const Villain = () => {
         setVillain(selectedVillain);
     }
 
+    const audio = new Audio('audio/thalia_3.mp3');
+    
+
     function handleButtonClick() {
         setShowGif(true);
+        audio.play();
 
         setTimeout(() => {
             get_random_villain();
+            audio.pause();
             setShowGif(false);
+            audio.currentTime = 0;
         }, 5590); 
     }
 
     return ( 
         <div>
             <button type="button" className="button" onClick={handleButtonClick}>Select Villain</button>
-            {showGif && <img className="villain-gif" src="/mccoy_titles.gif" alt="GIF" />} 
+            {showGif && <img className="villain-gif" src="images/mccoy_titles.gif" alt="GIF" />} 
             {villain && <p>{villain}</p>}
         </div>
     );
