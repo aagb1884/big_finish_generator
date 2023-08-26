@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const SupportingCharacter = () => {
+const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
 
     const supportingCharacters = [
         'Pigbin Josh',
@@ -22,7 +22,7 @@ const SupportingCharacter = () => {
         "commodore 'tonker' travers",
     ];
 
-    const [supportingCharacter, setSupportingCharacter] = useState("");
+    
     const [showGif, setShowGif] = useState(false);
     const previousCharacter = useRef(null);
 

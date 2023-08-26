@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const Villain = () => {
+const Villain = ({villain, setVillain}) => {
 
     const villains = [
         'Pigbin Josh',
@@ -19,7 +19,6 @@ const Villain = () => {
         
     ];
 
-    const [villain, setVillain] = useState("");
     const [showGif, setShowGif] = useState(false);
     const previousVillain = useRef(null);
 

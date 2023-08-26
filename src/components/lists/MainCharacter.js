@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const MainCharacter = () => {
+const MainCharacter = ({mainCharacter, setMainCharacter}) => {
 
     const mainCharacters = [
         'The Tenth Doctor',
@@ -20,7 +20,7 @@ const MainCharacter = () => {
 
     ];
 
-    const [mainCharacter, setMainCharacter] = useState("");
+  
     const [showGif, setShowGif] = useState(false);
     const previousCharacter = useRef(null);
 

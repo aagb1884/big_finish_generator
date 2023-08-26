@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const EventLocation = () => {
+const EventLocation = ({location, setLocation}) => {
 
     const eventLocation = [
         'a lift',
@@ -20,7 +20,7 @@ const EventLocation = () => {
         'a strange limbo world where nothing is as it seems'
     ];
 
-    const [location, setLocation] = useState("");
+   
     const [showGif, setShowGif] = useState(false);
     const previousLocation = useRef(null)
 
