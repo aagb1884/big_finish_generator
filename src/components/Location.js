@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const EventLocation = () => {
 
@@ -19,9 +19,15 @@ const EventLocation = () => {
 
     const [location, setLocation] = useState("");
     const [showGif, setShowGif] = useState(false);
+    const previousLocation = useRef(null)
 
     function get_random_location() {
-        const randomIndex = Math.floor(Math.random() * eventLocation.length);
+        let randomIndex;
+
+        do { randomIndex = Math.floor(Math.random() * eventLocation.length);
+        } while (randomIndex === previousLocation.current)
+
+        previousLocation.current = randomIndex;
         const selectedLocation = eventLocation[randomIndex];
         setLocation(selectedLocation);
     }

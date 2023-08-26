@@ -7,13 +7,18 @@ import Footer from "./components/Footer";
 import { Row, Col } from 'react-simple-flex-grid';
 import "react-simple-flex-grid/lib/main.css";
 
+
 const Container = () => {
-    
+
     return (
         <div className="container">
         <Header />
+    
+
         <section>
+       
         <br/>
+        
         <Row gutter={20} justify="center" align="middle">
             <Col span={6}>At last, </Col>
             <Col span={6}><MainCharacter /></Col>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const MainCharacter = () => {
 
@@ -19,9 +19,16 @@ const MainCharacter = () => {
 
     const [mainCharacter, setMainCharacter] = useState("");
     const [showGif, setShowGif] = useState(false);
+    const previousCharacter = useRef(null);
 
     function get_random_main_character() {
-        const randomIndex = Math.floor(Math.random() * mainCharacters.length);
+        let randomIndex;
+        
+        do {
+            randomIndex = Math.floor(Math.random() * mainCharacters.length);
+        } while (randomIndex === previousCharacter.current)
+
+        previousCharacter.current = randomIndex;
         const selectedCharacter = mainCharacters[randomIndex];
         setMainCharacter(selectedCharacter);
     }

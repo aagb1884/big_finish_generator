@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const Villain = () => {
 
@@ -13,14 +13,22 @@ const Villain = () => {
         'General Cobb',
         'that cow the Doctor asked about time scanners',
         'evil gas or something, I dunno',
-        'the Birmingham six'
+        'the Birmingham six',
+        'the War Engin',
     ];
 
     const [villain, setVillain] = useState("");
     const [showGif, setShowGif] = useState(false);
+    const previousVillain = useRef(null);
 
     function get_random_villain() {
-        const randomIndex = Math.floor(Math.random() * villains.length);
+        let randomIndex;
+        
+        do {
+            randomIndex = Math.floor(Math.random() * villains.length)
+        } while (randomIndex === previousVillain.current)
+
+        previousVillain.current = randomIndex;
         const selectedVillain = villains[randomIndex];
         setVillain(selectedVillain);
     }
