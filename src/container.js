@@ -6,15 +6,17 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Row, Col } from 'react-simple-flex-grid';
 import "react-simple-flex-grid/lib/main.css";
-
+import Screengrab from "./Screengrab";
+import { useRef } from "react";
 
 const Container = () => {
+    const sectionRef = useRef();
 
     return (
         <div className="container">
         <Header />
     
-
+        <div className="main-content">
         <section>
        
         <br/>
@@ -39,9 +41,14 @@ const Container = () => {
             <Col span={6}><EventLocation /></Col>
         </Row>
         </section>
+        <aside ref={sectionRef}> 
+                {/* ... your code */}
+            </aside>
+            <Screengrab componentRef={sectionRef} /> 
+            </div>
         <Footer />
         </div>
      );
 }
- 
+
 export default Container;

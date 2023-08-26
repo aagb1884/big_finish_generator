@@ -101,19 +101,9 @@ footer {
   left: 0;
 }
 
-.main-char-gif {
-  
-
-}
-
-.secondary-char-gif{
-
-}
-
-.villain-gif{
-}
-
-.location-gif{
+.main-content{
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 650px) {
