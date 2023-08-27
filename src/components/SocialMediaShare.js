@@ -24,9 +24,10 @@ const SocialMediaShare = () => {
         <div className="tumblr">
             <TumblrShareButton
             url={"https://bigfinishgenerator.surge.sh/"}
-            quote={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
-            hashtag="#doctorwho"
+            caption={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
+            tags={["doctorwho", "bigfinish"]}
             title={"The Big Finish Boxset Generator"}
+            posttype="link"
             >
                 <TumblrIcon size={30} />
             </TumblrShareButton>
