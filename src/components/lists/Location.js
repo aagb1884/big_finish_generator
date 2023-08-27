@@ -12,14 +12,14 @@ const EventLocation = ({location, setLocation}) => {
         'Albert Square',
         "an earth colony where it's illegal to post cringe",
         "the sleepy English village of Bidmead",
-        'that car park in Tenby that always smells of piss',
+        'the car park in Tenby that always smells of piss',
         "an abandoned space-station where nothing's actually wrong, it's just a bit old",
         "the Second Doctor's hotel room",
         "or on planet named after its  primary characteristic",
         "an amateur production of 'Footloose'",
         'a strange limbo world where nothing is as it seems',
         'Ecclefechan',
-        'a space whale'
+        'a space whale',
     ];
 
    

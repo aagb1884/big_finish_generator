@@ -24,6 +24,8 @@ const Container = () => {
         setLocation("");
     }
 
+    const pitch = `At last, ${mainCharacter} and ${supportingCharacter} meet ${villain} in ${location}!`
+
      return (
         <div className="container">
         <Header />
@@ -48,7 +50,7 @@ const Container = () => {
         <ClearAll clearAll={clearAll} />
         
     
-        <SocialMediaShare />
+        <SocialMediaShare pitch={pitch} />
         </div>
         </section>
         <Footer />
