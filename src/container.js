@@ -24,6 +24,8 @@ const Container = () => {
         setLocation("");
     }
 
+    const pitch = `At last, ${mainCharacter} and ${supportingCharacter} meet ${villain} in ${location}!`
+
      return (
         <div className="container">
         <Header />
@@ -33,13 +35,13 @@ const Container = () => {
             <div className="randomiser-buttons">
         <br/>
         <Row gutter={30} justify="center" align="stretch">
-            <Col span={6}>At last, </Col>
+            {/* <Col span={6}>At last, </Col> */}
             <Col span={6}><MainCharacter mainCharacter={mainCharacter} setMainCharacter={setMainCharacter} /></Col>
-            <Col span={6}>and</Col>
+            {/* <Col span={6}>and</Col> */}
             <Col span={6}><SupportingCharacter supportingCharacter={supportingCharacter} setSupportingCharacter={setSupportingCharacter} /></Col>
-            <Col span={6}>will meet</Col>
+            {/* <Col span={6}>will meet</Col> */}
             <Col span={6}><Villain villain={villain} setVillain={setVillain} /></Col>
-            <Col span={6}>in</Col>
+            {/* <Col span={6}>in</Col> */}
             <Col span={6}><EventLocation location={location} setLocation={setLocation} /></Col>
         </Row>
         </div>
@@ -48,7 +50,7 @@ const Container = () => {
         <ClearAll clearAll={clearAll} />
         
     
-        <SocialMediaShare />
+        <SocialMediaShare pitch={pitch}/>
         </div>
         </section>
         <Footer />

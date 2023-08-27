@@ -20,7 +20,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
         'Gunnersaurus',
         'the Ogron-Eater',
         "commodore 'tonker' travers",
-        
+        ''
     ];
 
     

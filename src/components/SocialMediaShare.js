@@ -2,20 +2,24 @@ import React from "react";
 import { FacebookShareButton, FacebookIcon,
         TumblrShareButton, TumblrIcon,
         RedditShareButton, RedditIcon,
-        LinkedinShareButton, LinkedinIcon,
         WhatsappShareButton, WhatsappIcon,
         EmailShareButton, EmailIcon 
     } from 'react-share';
 
-const SocialMediaShare = () => {
+const SocialMediaShare = ({pitch}) => {
+
+    const shareUrl = "https://bigfinishgenerator.surge.sh/";
+    const shareQuote = `${pitch} - I generated this boxset idea and had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too`;
+    const shareTitle = "The Big Finish Boxset Generator";
+
     return ( 
         <aside>
             Share this on your social channels.
             <div className="social-media-share">
         <div className="facebook">
             <FacebookShareButton
-            url={"https://bigfinishgenerator.surge.sh/"}
-            quote={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
+            url={shareUrl}
+            quote={shareQuote}
             hashtag="#doctorwho"
             >
                 <FacebookIcon size={30} />
@@ -23,10 +27,10 @@ const SocialMediaShare = () => {
         </div>
         <div className="tumblr">
             <TumblrShareButton
-            url={"https://bigfinishgenerator.surge.sh/"}
-            caption={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
+            url={shareUrl}
+            caption={shareQuote}
             tags={["doctorwho", "bigfinish"]}
-            title={"The Big Finish Boxset Generator"}
+            title={shareTitle}
             posttype="link"
             >
                 <TumblrIcon size={30} />
@@ -34,25 +38,16 @@ const SocialMediaShare = () => {
         </div>
         <div className="reddit">
             <RedditShareButton
-            url={"https://bigfinishgenerator.surge.sh/"}
-            title={"The Big Finish Boxset Generator"}
+            url={shareUrl}
+            title={shareTitle}
             >
                 <RedditIcon size={30} />
             </RedditShareButton>
         </div>
-        <div className="linked-in">
-            <LinkedinShareButton
-            source={"https://bigfinishgenerator.surge.sh/"}
-            summary={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
-            title={"The Big Finish Boxset Generator"}
-            >
-                <LinkedinIcon size={30} />
-            </LinkedinShareButton>
-        </div>
         <div className="whatsapp">
             <WhatsappShareButton
-            url="https://bigfinishgenerator.surge.sh/"
-            title={"The Big Finish Boxset Generator"}
+            url={shareUrl}
+            title={shareTitle}
             separator=" "
             >
                 <WhatsappIcon size={30} />
@@ -60,9 +55,9 @@ const SocialMediaShare = () => {
         </div>
         <div className="email">
             <EmailShareButton
-            url={"https://bigfinishgenerator.surge.sh/"}
-            body={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
-            subject="The Big Finish Boxset Generator"
+            url={shareUrl}
+            body={shareQuote}
+            subject={shareTitle}
             separator=" "
             >
                 <EmailIcon size={30} />

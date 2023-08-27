@@ -8,6 +8,7 @@ const PithyFooterQuotes = () => {
         'a big Welsh Man stole Rob shearman',
         "we're this close to getting Saward to write Time Inc. as a Lost Story",
         "john dorney is starting to like the idea of becoming a cyberman",
+        "'I can't believe I just tried this and got close to a genuine leak' - BigFinishInsider"
         
     ];
 
