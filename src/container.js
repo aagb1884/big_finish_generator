@@ -8,6 +8,7 @@ import ClearAll from "./components/ClearAll";
 import { Row, Col } from 'react-simple-flex-grid';
 import "react-simple-flex-grid/lib/main.css";
 import React, { useState } from 'react';
+import SocialMediaShare from "./components/SocialMediaShare";
 
 const Container = () => {
 
@@ -23,12 +24,13 @@ const Container = () => {
         setLocation("");
     }
 
-    return (
+     return (
         <div className="container">
         <Header />
     
 
         <section>
+            <div className="randomiser-buttons">
         <br/>
         <Row gutter={30} justify="center" align="stretch">
             <Col span={6}>At last, </Col>
@@ -40,8 +42,14 @@ const Container = () => {
             <Col span={6}>in</Col>
             <Col span={6}><EventLocation location={location} setLocation={setLocation} /></Col>
         </Row>
-        <br />
+        </div>
+        <div className="additional-button">
+        
         <ClearAll clearAll={clearAll} />
+        
+    
+        <SocialMediaShare />
+        </div>
         </section>
         <Footer />
         </div>

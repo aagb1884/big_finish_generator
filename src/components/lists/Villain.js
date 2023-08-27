@@ -16,7 +16,8 @@ const Villain = ({villain, setVillain}) => {
         'the Birmingham six',
         'the War Engin',
         "Turlough's solicitor",
-        
+        "Daddy Pig",
+        'Mark Lawrenson'
     ];
 
     const [showGif, setShowGif] = useState(false);
@@ -51,7 +52,7 @@ const Villain = ({villain, setVillain}) => {
 
     return ( 
         <div>
-            <button type="button" className="button" onClick={handleButtonClick}>Select Villain</button>
+            <button type="button" className="button" onClick={handleButtonClick}>Get Villain</button>
             {showGif && <img className="villain-gif" src="images/mccoy_titles.gif" alt="GIF" />} 
             {villain && <p>{villain}</p>}
         </div>

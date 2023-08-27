@@ -10,14 +10,16 @@ const EventLocation = ({location, setLocation}) => {
         'the Club Bongo International (Middlesbrough) during the Nineties',
         'F-Space',
         'Albert Square',
-        "a space-station where it's illegal to post cringe",
+        "an earth colony where it's illegal to post cringe",
         "the sleepy English village of Bidmead",
         'that car park in Tenby that always smells of piss',
         "an abandoned space-station where nothing's actually wrong, it's just a bit old",
         "the Second Doctor's hotel room",
-        "a planet named after its  primary characteristic",
+        "or on planet named after its  primary characteristic",
         "an amateur production of 'Footloose'",
-        'a strange limbo world where nothing is as it seems'
+        'a strange limbo world where nothing is as it seems',
+        'Ecclefechan',
+        'a space whale'
     ];
 
    
@@ -51,7 +53,7 @@ const EventLocation = ({location, setLocation}) => {
 
     return ( 
         <div>
-            <button type="button" className="button" onClick={handleButtonClick}>Select Location</button>
+            <button type="button" className="button" onClick={handleButtonClick}>Get Location</button>
             {showGif && <img className="location-gif" src="images/rtd_titles.gif" alt="GIF" />} 
             {location && <p>{location}</p>}
         </div>

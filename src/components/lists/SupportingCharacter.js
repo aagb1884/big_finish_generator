@@ -20,6 +20,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
         'Gunnersaurus',
         'the Ogron-Eater',
         "commodore 'tonker' travers",
+        
     ];
 
     
@@ -54,7 +55,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
 
     return ( 
         <div>
-            <button type="button" className="button" onClick={handleButtonClick}>Select Supporting Character</button>
+            <button type="button" className="button" onClick={handleButtonClick}>Get Supporting Character</button>
             {showGif && <img className="support-char-gif" src="images/capaldi_clocks.gif" alt="GIF" />} 
             {supportingCharacter && <p>{supportingCharacter}</p>}
         </div>

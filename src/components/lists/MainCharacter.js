@@ -17,6 +17,9 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
         'Lucy Saxon',
         'the Kerblam HR team',
         "Someone Jacob Dudman can't quite do the voice for",
+        "Arabella Weir Doctor",
+        'Nardole',
+        'Morton Dill'
 
     ];
 
@@ -52,7 +55,7 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
 
     return ( 
         <div>
-            <button type="button" className="button" onClick={handleButtonClick}>Select Main Character</button>
+            <button type="button" className="button" onClick={handleButtonClick}>Get Main Character</button>
             {showGif && <img className="main-char-gif" src="images/untempered_schism.gif" alt="GIF" />} 
             {mainCharacter && <p>{mainCharacter}</p>}
         </div>
