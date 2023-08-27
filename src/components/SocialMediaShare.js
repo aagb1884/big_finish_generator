@@ -1,6 +1,5 @@
 import React from "react";
 import { FacebookShareButton, FacebookIcon,
-        FacebookMessengerShareButton, FacebookMessengerIcon,
         TumblrShareButton, TumblrIcon,
         RedditShareButton, RedditIcon,
         LinkedinShareButton, LinkedinIcon,
@@ -21,15 +20,6 @@ const SocialMediaShare = () => {
             >
                 <FacebookIcon size={30} />
             </FacebookShareButton>
-        </div>
-        <div className="fb-messenger">
-            <FacebookMessengerShareButton
-            url={"https://bigfinishgenerator.surge.sh/"}
-            quote={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
-            hashtag="#doctorwho #bigfinish"
-            >
-                <FacebookMessengerIcon size={30} />
-            </FacebookMessengerShareButton>
         </div>
         <div className="tumblr">
             <TumblrShareButton
@@ -70,8 +60,9 @@ const SocialMediaShare = () => {
         <div className="email">
             <EmailShareButton
             url={"https://bigfinishgenerator.surge.sh/"}
-            quote={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
-            hashtag="#doctorwho #bigfinish"
+            body={'I had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too'}
+            subject="The Big Finish Boxset Generator"
+            separator=" "
             >
                 <EmailIcon size={30} />
             </EmailShareButton>
