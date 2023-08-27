@@ -8,6 +8,7 @@ import ClearAll from "./components/ClearAll";
 import { Row, Col } from 'react-simple-flex-grid';
 import "react-simple-flex-grid/lib/main.css";
 import React, { useState } from 'react';
+import SocialMediaShare from "./components/SocialMediaShare";
 
 const Container = () => {
 
@@ -29,6 +30,7 @@ const Container = () => {
     
 
         <section>
+            <div className="randomiser-buttons">
         <br/>
         <Row gutter={30} justify="center" align="stretch">
             <Col span={6}>At last, </Col>
@@ -37,11 +39,16 @@ const Container = () => {
             <Col span={6}><SupportingCharacter supportingCharacter={supportingCharacter} setSupportingCharacter={setSupportingCharacter} /></Col>
             <Col span={6}>will meet</Col>
             <Col span={6}><Villain villain={villain} setVillain={setVillain} /></Col>
-            <Col span={6}>in</Col>
+            <Col span={6}>in or on</Col>
             <Col span={6}><EventLocation location={location} setLocation={setLocation} /></Col>
         </Row>
-        <br />
+        </div>
+        <div className="additional-buttons">
+        
         <ClearAll clearAll={clearAll} />
+      
+        <SocialMediaShare />
+        </div>
         </section>
         <Footer />
         </div>

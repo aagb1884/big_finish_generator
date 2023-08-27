@@ -17,6 +17,8 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
         'Lucy Saxon',
         'the Kerblam HR team',
         "Someone Jacob Dudman can't quite do the voice for",
+        "Arabella Weir Doctor",
+        'Nardole'
 
     ];
 

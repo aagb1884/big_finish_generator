@@ -16,6 +16,7 @@ const Villain = ({villain, setVillain}) => {
         'the Birmingham six',
         'the War Engin',
         "Turlough's solicitor",
+        "Daddy Pig",
         
     ];
 
