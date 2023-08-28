@@ -4,6 +4,7 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
 
     const mainCharacters = [
         'The Tenth Doctor',
+        "The Tenth Doctor but it's Jackie Tyler in disguise",
         'River Song',
         'Dalek Caan',
         'The Morbius Doctors',
@@ -19,7 +20,8 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
         "Someone Jacob Dudman can't quite do the voice for",
         "Arabella Weir Doctor",
         'Nardole',
-        'Morton Dill'
+        'Morton Dill',
+        
 
     ];
 
