@@ -11,15 +11,17 @@ const Villain = ({villain, setVillain}) => {
         'the Timewyrm',
         'that big Yellow Dalek',
         'General Cobb',
-        'the cow the Doctor asked about time scanners',
-        'evil gas or something, I dunno',
+        'evil gas or something, whatever it was',
         'the Birmingham six',
         'the War Engin',
         "Turlough's solicitor",
         "Daddy Pig",
         'Mark Lawrenson',
         'Dark Sam',
-        'all the kraals'
+        'all the Kraals',
+        'Mysterious Man',
+        'the Shansheeth',
+        'a Hypnotron'
     ];
 
     const [showGif, setShowGif] = useState(false);

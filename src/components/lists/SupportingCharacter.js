@@ -17,11 +17,12 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
         'any of the Class cast who are available',
         'Gilbert M',
         'Courtney Pine',
-        'Gunnersaurus',
         'the Ogron-Eater',
         "commodore 'tonker' travers",
-        'Cyberbrig'
-        
+        'Cyberbrig',
+        'the Afghan kid Danny Pink killed',
+        'the cow the Doctor asked about time scanners',
+        "Maria's Dad"
     ];
 
     

@@ -13,13 +13,14 @@ const EventLocation = ({location, setLocation}) => {
         "an earth colony where it's illegal to post cringe",
         "the sleepy English village of Bidmead",
         'the car park in Tenby that always smells of piss',
-        "an abandoned space-station where nothing's actually wrong, it's just a bit old",
+        "a space station with abandonment issues",
         "the Second Doctor's hotel room",
-        "or on planet named after its  primary characteristic",
+        "or on a planet named after its  primary characteristic",
         "an amateur production of 'Footloose'",
         'a strange limbo world where nothing is as it seems',
-        'Ecclefechan',
         'a space whale',
+        'the Netherfield ball',
+        "harry sullivan's infanticide maze"
     ];
 
    
