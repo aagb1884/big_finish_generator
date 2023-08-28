@@ -63,7 +63,7 @@ header > h3 {
 section {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   font-size: larger;
   padding-top: 150px;
