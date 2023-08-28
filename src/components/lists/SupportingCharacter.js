@@ -19,7 +19,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
         'Courtney Pine',
         'the Ogron-Eater',
         "commodore 'tonker' travers",
-        'Cyberbrig',
+        'CyberBrig',
         'the Afghan kid Danny Pink killed',
         'the cow the Doctor asked about time scanners',
         "Maria's Dad"
