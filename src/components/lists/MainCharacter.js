@@ -21,7 +21,9 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
         "Arabella Weir Doctor",
         'Nardole',
         'Morton Dill',
-        'Tallulah and Laszlo'
+        'Tallulah and Laszlo',
+        'Doctor Pastry',
+        'Bessie'
     ];
 
   
