@@ -1,7 +1,7 @@
 const ClearAll = ({clearAll}) => {
 
     return ( 
-<button onClick={clearAll}>Clear All</button>
+<button data-testid="clear-all-button" onClick={clearAll}>Clear All</button>
      );
 }
  

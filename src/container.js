@@ -31,7 +31,7 @@ const Container = () => {
         <Header />
     
 
-        <section>
+        <section data-testid="randomiser">
             <div className="randomiser-buttons">
         <br/>
         <Row gutter={30} justify="center" align="stretch">

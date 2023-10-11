@@ -57,7 +57,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
 
     return ( 
         <div>
-            <button type="button" className="button" onClick={handleButtonClick}>Get Supporting Character</button>
+            <button type="button" data-testid="supporting-character-button" className="button" onClick={handleButtonClick}>Get Supporting Character</button>
             {showGif && <img className="support-char-gif" src="images/capaldi_clocks.gif" alt="GIF" />} 
             {supportingCharacter && <p>{supportingCharacter}</p>}
         </div>
