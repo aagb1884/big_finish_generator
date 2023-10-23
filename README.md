@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Big Finish Story Generator
+
+This is a front end React app [you can play here](https://andrewblair.co.uk/apps/big-finish-generator).
+
+It's based on the output of the audiobook company [Big Finish productions](https://www.bigfinish.com/), using the cliches of their Doctor Who output to make a random story generator. Each 'Get ...' button retrieves a random string from an array (with a little sound effect and gif played while you wait), and once all four buttons are pressed you get a pitch for a Big Finish boxset. You have the option to share this on your social channels using react-share, so you'll need to install that for the app to work if you clone it.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
